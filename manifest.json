@@ -1,0 +1,26 @@
+{
+  "name": "Skribblio Word Suggestor",
+  "description": "Automatically gives you a list of words that fit the word hint",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": [
+      "https://skribbl.io/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon_16x16.png",
+      "32": "img/icon_32x32.png",
+      "48": "img/icon_48x48.png",
+      "64": "img/icon_64x64.png"
+    }
+  },
+  "web_accessible_resources": [
+    "example.js",
+    "words/words.json"
+  ]
+}
